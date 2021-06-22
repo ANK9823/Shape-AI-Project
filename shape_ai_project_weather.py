@@ -34,9 +34,10 @@ print ("Current weather desc  :",weather_desc)
 print ("Current Humidity      :",hmdt, '%')
 print ("Current wind speed    :",wind_spd ,'kmph')
 
-"""import requests
 
 r = requests.get('https://openweathermap.org/current')
+with open('api_link.json','wt') as f:
+   f.write(r.text) 
 
-print(r.text)
-"""
+
+
